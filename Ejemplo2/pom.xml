@@ -1,0 +1,29 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.sopra</groupId>
+  <artifactId>EjemploMultientorno</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  <name>ProyectoWebo NoTodoCodigo</name>
+  <url>http://maven.apache.org</url>
+  
+  <properties>
+  	<propiedadHardcode>Hola, soy una propiedad definida en el POM!</propiedadHardcode>
+  </properties>
+  
+  <build>
+  	<finalName>ProyectoWeb</finalName>
+  	<filters>
+  		<filter>src/main/filters/filtro-${entorno}.properties</filter>
+ 	</filters>
+ 	<resources>
+ 		<resource>
+ 			<filtering>true</filtering>
+ 			<directory>src/main/resources</directory>
+ 			<includes>
+ 				<include>config/configuration.xml</include>
+ 			</includes>
+ 		</resource>
+ 	</resources>
+  </build>
+</project>
