@@ -1,4 +1,4 @@
 # Maven
 
-Ejemplo2 -> Filters with Maven
-Ejemplo3 -> Filters and Assembly with Maven
+1. Ejemplo2 -> Filters with Maven
+2. Ejemplo3 -> Filters and Assembly with Maven
