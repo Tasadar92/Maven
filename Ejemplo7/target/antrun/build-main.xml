@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <property name="compile_classpath" refid="maven.compile.classpath"/>
+  <echo file="D:\curso\Ejemplo7\target\classes/deps.txt" message="compile classpath: ${compile_classpath}"/>
+  <copy todir="D:\curso\Ejemplo7\target\classes">
+    <fileset dir="D:\curso\Ejemplo7\src\main\java"/>
+  </copy>
+</target>
+</project>
