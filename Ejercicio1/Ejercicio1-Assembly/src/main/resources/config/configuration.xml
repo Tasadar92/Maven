@@ -1,0 +1,4 @@
+<bean id="mockBean">
+	<propety name="versionDelPom" value="${pom.version}" />
+	<propety name="nombreProyecto" value="${project.name}" />
+</bean>

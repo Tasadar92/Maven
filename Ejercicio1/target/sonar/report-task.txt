@@ -1,0 +1,6 @@
+projectKey=com.sopra:Ejercicio1
+serverUrl=http://172.20.182.225:9000
+serverVersion=6.7.3.38370
+dashboardUrl=http://172.20.182.225:9000/dashboard/index/com.sopra:Ejercicio1
+ceTaskId=AWX3jlzgFH-wD2yagEBm
+ceTaskUrl=http://172.20.182.225:9000/api/ce/task?id=AWX3jlzgFH-wD2yagEBm

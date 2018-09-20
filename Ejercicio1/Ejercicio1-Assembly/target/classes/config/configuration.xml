@@ -1,0 +1,4 @@
+<bean id="mockBean">
+	<propety name="versionDelPom" value="0.0.1-SNAPSHOT" />
+	<propety name="nombreProyecto" value="Assembly" />
+</bean>
