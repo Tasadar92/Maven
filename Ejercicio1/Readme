@@ -1,1 +1,25 @@
+Definición de proyecto multimódulo, con los módulos siguientes:
+         + Módulo commons (crear varias clases dentro)
+         - Módulo war (con dependencia a nuestro proyecto commons y alguna otra dependencia más).
+         * Módulo ear (con war como dependencia).
+         + Módulo assembly (con varios perfiles (dev y prod) y un filter, para resolver el nombre del filtro en función del perfil).
+		          1. Nombrar el paquete generado como  YYYYMMDD-Entrega-Nombre-Version-del-proyecto.zip
+		          2. Estructura de carpetas:
+		                + log/ (crear la carpeta vacía)
+		                - conf/ ficheros que estén en src/main/resources, filtrando las propiedades ${version} y ${name} para que os ponga la versión en el groupId del proyecto
+		                * lib/ dependencias del proyecto assembly
+		                + bin/ (Scripts .sh contenidos en /src/main/script ->  en src/main/scripts meteréis .sh, .bat, .conf, y .jpg) 	(todas directamente en el zip)
+         - Versión mínima para compilar - JDK 1.7
+         * Encoding del código en ASCII		
+         + Configurar nombres de proyecto como War, EAR, etc, para que aparezcan en la compilación como tal, y no aparezcan nombres como Maven Quick Start Archetype
+         - Eliminar warnings de duplicados en versiones etc (ver trazas maven)
+         * Generar un Site  (mvn site) y documentación Javadoc para el proyecto
+Generar jar con código fuente del proyecto
+Generar javadoc
+Añadir desarrolladores al proyecto (con distintos roles)
+Añadir la información sobre el sistema de gestión de incidencias (url genérica de Mantis)
+Añadir la indicación de la URL de Integración Continua
+Añadir la configuración SCM, con el trunk de nuestro proyecto (podéis inventaros uno).
+Configurar el proyecto para que se pueda desplegar en un repositorio
+Configurar Análisis Sonar en el proyecto
 
